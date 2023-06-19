@@ -431,6 +431,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B1C4D5062A3FED9000B30CEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4D4E82A3F908100B30CEA /* FeedViewControllerTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B1D614822A315FA600B102DE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,7 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C4D4FD2A3FEC1A00B30CEA /* Helpers */,
-				B1C4D4E82A3F908100B30CEA /* FeedViewControllerTests.swift */,
+				B1C4D5062A3FED9000B30CEA /* Controllers */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
