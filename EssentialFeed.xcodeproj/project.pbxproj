@@ -459,6 +459,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B1C4D5102A3FEFE800B30CEA /* FeedUI */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4D5062A3FED9000B30CEA /* Controllers */,
+			);
+			path = FeedUI;
+			sourceTree = "<group>";
+		};
 		B1D614822A315FA600B102DE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,7 +506,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C4D4FD2A3FEC1A00B30CEA /* Helpers */,
-				B1C4D5062A3FED9000B30CEA /* Controllers */,
+				B1C4D5102A3FEFE800B30CEA /* FeedUI */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
