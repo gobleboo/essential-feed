@@ -459,8 +459,8 @@
 			children = (
 				B1C4D4F32A3FAB8F00B30CEA /* FeedImageCell.swift */,
 				B1C4D4F52A3FDA6100B30CEA /* UIView+Shimmering.swift */,
-				B14802532A71F9DA00D77406 /* Feed.xcassets */,
 				B14802552A71FA1C00D77406 /* Feed.storyboard */,
+				B14802532A71F9DA00D77406 /* Feed.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
