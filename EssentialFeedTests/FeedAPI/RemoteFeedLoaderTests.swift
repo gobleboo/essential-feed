@@ -133,19 +133,19 @@ final class RemoteFeedLoaderTests: XCTestCase {
     private func makeItem(id: UUID,
                           description: String?,
                           location: String?,
-                          imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
-        let item = FeedItem(
+                          imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
+        let item = FeedImage(
             id: id,
             description: description,
             location: location,
-            imageURL: imageURL
+            url: imageURL
         )
         
         let json = [
             "id": item.id.uuidString,
             "description": item.description,
             "location": item.location,
-            "image": item.imageURL.absoluteString
+            "image": item.url.absoluteString
         ].compactMapValues { $0 }
         
         return (item, json)
@@ -182,13 +182,13 @@ final class RemoteFeedLoaderTests: XCTestCase {
     }
 
     private final class HTTPClientSpy: HTTPClient {
-        private var messages = [(url: URL, completion: (HTTPClientResult) -> Void)]()
+        private var messages = [(url: URL, completion: (HTTPClient.Result) -> Void)]()
         
         var requestedURLs: [URL] {
             messages.map { $0.url }
         }
 
-        func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
             messages.append((url, completion))
         }
         
@@ -204,7 +204,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
                 headerFields: nil
             )!
             
-            messages[index].completion(.success(data, response))
+            messages[index].completion(.success((data, response)))
         }
     }
 
