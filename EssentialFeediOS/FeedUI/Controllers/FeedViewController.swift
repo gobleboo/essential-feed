@@ -15,6 +15,11 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         didSet { tableView.reloadData() }
     }
     
+    convenience init(refreshController: FeedRefreshViewController) {
+        self.init(nibName: nil, bundle: nil)
+        self.refreshController = refreshController
+    }
+    
     
     public override func viewDidLoad() {
         super.viewDidLoad()
