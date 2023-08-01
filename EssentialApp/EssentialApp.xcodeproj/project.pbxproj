@@ -18,6 +18,7 @@
 		B158A13A2A7753E7003F9B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B158A1392A7753E7003F9B01 /* Assets.xcassets */; };
 		B158A13D2A7753E7003F9B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B158A13B2A7753E7003F9B01 /* LaunchScreen.storyboard */; };
 		B1F3E6052A79B8A70063841F /* FeedLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E6042A79B8A70063841F /* FeedLoaderWithFallbackCompositeTests.swift */; };
+		B1F3E6072A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E6062A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B158A13E2A7753E7003F9B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B158A1432A7753E7003F9B01 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3E6042A79B8A70063841F /* FeedLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
+		B1F3E6062A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				B158A1392A7753E7003F9B01 /* Assets.xcassets */,
 				B158A13B2A7753E7003F9B01 /* LaunchScreen.storyboard */,
 				B158A13E2A7753E7003F9B01 /* Info.plist */,
+				B1F3E6062A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				B158A1352A7753E7003F9B01 /* ViewController.swift in Sources */,
 				B158A1312A7753E7003F9B01 /* AppDelegate.swift in Sources */,
+				B1F3E6072A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				B158A1332A7753E7003F9B01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
