@@ -78,6 +78,7 @@
 		B158A13C2A7753E7003F9B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B158A13E2A7753E7003F9B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B158A1432A7753E7003F9B01 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BE9D1E2A82F17E005C414E /* EssentialApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
 		B1F3E6042A79B8A70063841F /* FeedLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 		B1F3E6062A79BA6C0063841F /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		B1F3E6082A79BAD60063841F /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 		B158A1242A7753E7003F9B01 = {
 			isa = PBXGroup;
 			children = (
+				B1BE9D1E2A82F17E005C414E /* EssentialApp.xctestplan */,
 				B158A12F2A7753E7003F9B01 /* EssentialApp */,
 				B158A1462A7753E7003F9B01 /* EssentialAppTests */,
 				B158A12E2A7753E7003F9B01 /* Products */,
