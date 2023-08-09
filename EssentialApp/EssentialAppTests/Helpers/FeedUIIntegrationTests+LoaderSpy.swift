@@ -8,32 +8,36 @@
 import Foundation
 import EssentialFeed
 import EssentialFeediOS
+import Combine
 
 extension FeedUIIntegrationTests {
-    class LoaderSpy: FeedLoader, FeedImageDataLoader {
+    
+    class LoaderSpy: FeedImageDataLoader {
         
-        // MARK: FeedLoader
+        // MARK: - FeedLoader
         
-        private var feedRequests = [(FeedLoader.Result) -> Void]()
+        private var feedRequests = [PassthroughSubject<[FeedImage], Error>]()
         
         var loadFeedCallCount: Int {
-            feedRequests.count
+            return feedRequests.count
         }
-        
-        func load(completion: @escaping (FeedLoader.Result) -> Void) {
-            feedRequests.append(completion)
+                
+        func loadPublisher() -> AnyPublisher<[FeedImage], Error> {
+            let publisher = PassthroughSubject<[FeedImage], Error>()
+            feedRequests.append(publisher)
+            return publisher.eraseToAnyPublisher()
         }
-        
+
         func completeFeedLoading(with feed: [FeedImage] = [], at index: Int = 0) {
-            feedRequests[index](.success(feed))
+            feedRequests[index].send(feed)
         }
         
-        func completeFeedLoadingWithError(at index: Int) {
+        func completeFeedLoadingWithError(at index: Int = 0) {
             let error = NSError(domain: "an error", code: 0)
-            feedRequests[index](.failure(error))
+            feedRequests[index].send(completion: .failure(error))
         }
         
-        // MARK: FeedImageDataLoader
+        // MARK: - FeedImageDataLoader
         
         private struct TaskSpy: FeedImageDataLoaderTask {
             let cancelCallback: () -> Void
@@ -45,7 +49,7 @@ extension FeedUIIntegrationTests {
         private var imageRequests = [(url: URL, completion: (FeedImageDataLoader.Result) -> Void)]()
         
         var loadedImageURLs: [URL] {
-            imageRequests.map { $0.url }
+            return imageRequests.map { $0.url }
         }
         
         private(set) var cancelledImageURLs = [URL]()
@@ -64,4 +68,5 @@ extension FeedUIIntegrationTests {
             imageRequests[index].completion(.failure(error))
         }
     }
+    
 }
