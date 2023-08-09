@@ -388,6 +388,7 @@
 		B136F6F029C53B7D00BFC48E /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				B1A4EB272A843DD400F7D6CA /* ImageCommentsAPI */,
 				B1A4EB222A843C9300F7D6CA /* SharedAPI */,
 				B1A4EB212A843C2A00F7D6CA /* SharedAPIInfra */,
 				B1A4EB1E2A843B4900F7D6CA /* ImageCommentsFeature */,
@@ -403,6 +404,7 @@
 		B136F6FA29C53B7D00BFC48E /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1A4EB282A843E1E00F7D6CA /* ImageCommentsAPI */,
 				B1A4EB252A843D6100F7D6CA /* SharedAPI */,
 				B1A4EB232A843CFA00F7D6CA /* SharedAPIInfra */,
 				B13BBAC32A74709D00F28654 /* FeedPresentation */,
@@ -486,8 +488,6 @@
 				B1B2AF0729DFA63E00DA411D /* FeedItemsMapper.swift */,
 				B1B81A6B2A355B3C00EBF1EB /* RemoteFeedItem.swift */,
 				B11B14ED2A76A82C00EFAC0B /* RemoteFeedImageDataLoader.swift */,
-				B1A4EB172A843A0E00F7D6CA /* ImageCommentsMapper.swift */,
-				B1A4EB192A843A2700F7D6CA /* RemoteImageCommentsLoader.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -549,13 +549,29 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B1A4EB272A843DD400F7D6CA /* ImageCommentsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4EB192A843A2700F7D6CA /* RemoteImageCommentsLoader.swift */,
+				B1A4EB172A843A0E00F7D6CA /* ImageCommentsMapper.swift */,
+			);
+			path = ImageCommentsAPI;
+			sourceTree = "<group>";
+		};
+		B1A4EB282A843E1E00F7D6CA /* ImageCommentsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4EB1B2A843A4000F7D6CA /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = ImageCommentsAPI;
+			sourceTree = "<group>";
+		};
 		B1B2AF092A01EAF400DA411D /* FeedAPI */ = {
 			isa = PBXGroup;
 			children = (
 				B19E6C9629CA85E20086EB42 /* RemoteFeedLoaderTests.swift */,
 				B11B14E62A76A14900EFAC0B /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				B11B14E82A76A31100EFAC0B /* LoadFeedFromRemoteUseCaseTests.swift */,
-				B1A4EB1B2A843A4000F7D6CA /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
