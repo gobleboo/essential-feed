@@ -470,8 +470,6 @@
 		B13BBAD92A74799A00F28654 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B13BBADA2A7479A300F28654 /* UIRefreshControl+Helpers.swift */,
-				B1CD34EF2A83030100F87F13 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -668,7 +666,6 @@
 		B1C4D4F92A3FEB7F00B30CEA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1C4D4F12A3FA04200B30CEA /* ListViewController.swift */,
 				B1C4D5132A3FF27100B30CEA /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
@@ -680,11 +677,9 @@
 				B13BBAD92A74799A00F28654 /* Helpers */,
 				B1C4D4F32A3FAB8F00B30CEA /* FeedImageCell.swift */,
 				B1C4D4F52A3FDA6100B30CEA /* UIView+Shimmering.swift */,
-				B19BCFBA2A73310000598BE6 /* UITableView+Dequeueing.swift */,
 				B19BCFBC2A73318A00598BE6 /* UIImageView+Animations.swift */,
 				B14802552A71FA1C00D77406 /* Feed.storyboard */,
 				B14802532A71F9DA00D77406 /* Feed.xcassets */,
-				B13BBAD72A74787E00F28654 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -741,6 +736,34 @@
 			path = FeedUI;
 			sourceTree = "<group>";
 		};
+		B1ED9C732A859D77002758D0 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				B1ED9C742A859D99002758D0 /* Views */,
+				B1C4D4F12A3FA04200B30CEA /* ListViewController.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		B1ED9C742A859D99002758D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1ED9C752A859DC7002758D0 /* Helpers */,
+				B13BBAD72A74787E00F28654 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1ED9C752A859DC7002758D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B19BCFBA2A73310000598BE6 /* UITableView+Dequeueing.swift */,
+				B1CD34EF2A83030100F87F13 /* UITableView+HeaderSizing.swift */,
+				B13BBADA2A7479A300F28654 /* UIRefreshControl+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B1F220A62A3656AF00A28E48 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -754,6 +777,7 @@
 		B1FBAF1B2A3D1C95005C64CB /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				B1ED9C732A859D77002758D0 /* SharedUI */,
 				B1C4D4F82A3FEB7300B30CEA /* FeedUI */,
 			);
 			path = EssentialFeediOS;
