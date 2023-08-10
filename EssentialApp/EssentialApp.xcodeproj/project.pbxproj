@@ -37,6 +37,8 @@
 		B1CD34E42A82FF5000F87F13 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD34E32A82FF5000F87F13 /* InMemoryFeedStore.swift */; };
 		B1CD350A2A8306D400F87F13 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD35092A8306D400F87F13 /* UIView+TestHelpers.swift */; };
 		B1CD350C2A83183200F87F13 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD350B2A83183200F87F13 /* CombineHelpers.swift */; };
+		B1ED9C992A85ABD6002758D0 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED9C982A85ABD6002758D0 /* CommentsUIComposer.swift */; };
+		B1ED9C9B2A85ABEE002758D0 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED9C9A2A85ABEE002758D0 /* CommentsUIIntegrationTests.swift */; };
 		B1F3E60E2A79BD5A0063841F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E60D2A79BD5A0063841F /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		B1CD34E32A82FF5000F87F13 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		B1CD35092A8306D400F87F13 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		B1CD350B2A83183200F87F13 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		B1ED9C982A85ABD6002758D0 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
+		B1ED9C9A2A85ABEE002758D0 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		B1F3E60D2A79BD5A0063841F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		B1F3E60F2A79BDA80063841F /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +168,7 @@
 				B1CD34D52A82FB2A00F87F13 /* FeedUIComposer.swift */,
 				B1CD34D72A82FB6900F87F13 /* FeedViewAdapter.swift */,
 				B1CD350B2A83183200F87F13 /* CombineHelpers.swift */,
+				B1ED9C982A85ABD6002758D0 /* CommentsUIComposer.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				B1CD34B72A82F78700F87F13 /* SceneDelegateTests.swift */,
 				B1CD34DD2A82FBDD00F87F13 /* FeedUIIntegrationTests.swift */,
 				B1CD34DF2A82FCBB00F87F13 /* FeedAcceptanceTests.swift */,
+				B1ED9C9A2A85ABEE002758D0 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				B1CD34D62A82FB2A00F87F13 /* FeedUIComposer.swift in Sources */,
 				B1CD350C2A83183200F87F13 /* CombineHelpers.swift in Sources */,
 				B158A1352A7753E7003F9B01 /* ViewController.swift in Sources */,
+				B1ED9C992A85ABD6002758D0 /* CommentsUIComposer.swift in Sources */,
 				B158A1312A7753E7003F9B01 /* AppDelegate.swift in Sources */,
 				B158A1332A7753E7003F9B01 /* SceneDelegate.swift in Sources */,
 				B1CD34BC2A82F8D700F87F13 /* WeakRefVirtualProxy.swift in Sources */,
@@ -319,6 +326,7 @@
 			files = (
 				B1CD34C42A82F97A00F87F13 /* ListViewController+TestHelpers.swift in Sources */,
 				B1CD34CC2A82FA0C00F87F13 /* UIRefreshControl+TestHelpers.swift in Sources */,
+				B1ED9C9B2A85ABEE002758D0 /* CommentsUIIntegrationTests.swift in Sources */,
 				B1CD34C02A82F93200F87F13 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				B1CD34CA2A82F9DB00F87F13 /* UIImage+TestHelpers.swift in Sources */,
 				B1CD34B82A82F78700F87F13 /* SceneDelegateTests.swift in Sources */,
