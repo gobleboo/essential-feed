@@ -32,7 +32,6 @@
 		B13BBAC52A7470B800F28654 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBAC42A7470B800F28654 /* FeedPresenterTests.swift */; };
 		B13BBACF2A7473F600F28654 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBACE2A7473F600F28654 /* FeedPresenter.swift */; };
 		B13BBAD02A74742400F28654 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = B13BBACA2A7472F600F28654 /* Feed.strings */; };
-		B13BBAD22A74747500F28654 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBAD12A74747500F28654 /* FeedViewModel.swift */; };
 		B13BBAD42A7474AC00F28654 /* ResourceLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBAD32A7474AC00F28654 /* ResourceLoadingViewModel.swift */; };
 		B13BBAD82A74787E00F28654 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBAD72A74787E00F28654 /* ErrorView.swift */; };
 		B13BBADB2A7479A300F28654 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13BBADA2A7479A300F28654 /* UIRefreshControl+Helpers.swift */; };
@@ -216,7 +215,6 @@
 		B13BBACB2A7472FA00F28654 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		B13BBACC2A7472FB00F28654 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		B13BBACE2A7473F600F28654 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		B13BBAD12A74747500F28654 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		B13BBAD32A7474AC00F28654 /* ResourceLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingViewModel.swift; sourceTree = "<group>"; };
 		B13BBAD72A74787E00F28654 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		B13BBADA2A7479A300F28654 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
@@ -505,7 +503,6 @@
 			children = (
 				B13BBACE2A7473F600F28654 /* FeedPresenter.swift */,
 				B13BBACA2A7472F600F28654 /* Feed.strings */,
-				B13BBAD12A74747500F28654 /* FeedViewModel.swift */,
 				B13BBAD32A7474AC00F28654 /* ResourceLoadingViewModel.swift */,
 				B13BBADF2A747C8C00F28654 /* FeedImagePresenter.swift */,
 				B13BBAE12A747CE900F28654 /* FeedImageViewModel.swift */,
@@ -1188,7 +1185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A4EB202A843B6800F7D6CA /* ImageComment.swift in Sources */,
-				B13BBAD22A74747500F28654 /* FeedViewModel.swift in Sources */,
 				B10816F82A3BC46D009A871A /* CoreDataHelpers.swift in Sources */,
 				B1B2AF0829DFA63E00DA411D /* FeedItemsMapper.swift in Sources */,
 				B1A4EB4A2A8453F100F7D6CA /* ResourceErrorView.swift in Sources */,
