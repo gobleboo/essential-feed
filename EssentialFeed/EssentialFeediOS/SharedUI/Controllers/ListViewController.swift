@@ -16,7 +16,7 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
             controller.dataSource.tableView(tableView, cellForRowAt: index)
         }
     }()
-    
+
     public var onRefresh: (() -> Void)?
     
     public override func viewDidLoad() {
@@ -40,7 +40,7 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+
         tableView.sizeTableHeaderToFit()
     }
     
@@ -60,14 +60,9 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
             snapshot.appendSections([section])
             snapshot.appendItems(cellControllers, toSection: section)
         }
-        
-        if #available(iOS 15.0, *) {
-            dataSource.applySnapshotUsingReloadData(snapshot)
-        } else {
-            dataSource.apply(snapshot)
-        }
+        dataSource.apply(snapshot)
     }
-    
+
     public func display(_ viewModel: ResourceLoadingViewModel) {
         refreshControl?.update(isRefreshing: viewModel.isLoading)
     }
