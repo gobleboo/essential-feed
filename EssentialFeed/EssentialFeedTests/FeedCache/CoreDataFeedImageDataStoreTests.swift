@@ -63,7 +63,7 @@ class CoreDataFeedImageDataStoreTests: XCTestCase {
         let op3 = expectation(description: "Operation 3")
         sut.insert(anyData(), for: url) { _ in op3.fulfill() }
         
-        wait(for: [op1, op2, op3], timeout: 10.0, enforceOrder: true)
+        wait(for: [op1, op2, op3], timeout: 5.0, enforceOrder: true)
     }
     
     // - MARK: Helpers
